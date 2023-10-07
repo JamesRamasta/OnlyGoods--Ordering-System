@@ -1,0 +1,233 @@
+/*--------------------- HOMEPAGE ---------------------*/
+
+/*-- Image Slider --*/
+.image_slider {
+  padding-top: 2%;
+}
+
+.carousel-item {
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-inner {
+  width: 90%;
+  height: 100%;
+  margin: 5%;
+}
+
+/*-- Floating Carousel Caption --*/
+.floating_caption {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  color: white;
+  font-family: "Abril Fatface", cursive;
+  font-size: xx-large;
+}
+
+/*-- Under Image Text --*/
+.under_text {
+  padding: 50%;
+  font-size: 50px;
+  font-family: "Abril Fatface", cursive;
+}
+
+/*-- General Padding --*/
+.padding {
+  padding: 40px 0;
+}
+
+.padding img {
+  width: 100%;
+}
+
+/*-- gallery --*/
+.image-gallery {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+
+.image-gallery .image-box {
+  position: relative;
+  background-color: #d7d7d8;
+  overflow: hidden;
+}
+
+.image-gallery .image-box:nth-child(7n + 1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.image-gallery .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.image-gallery .image-box:hover img {
+  transform: scale(1.1);
+}
+
+.image-gallery .image-box .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fafafaf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.image-gallery .image-box:hover .overlay {
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-gallery .image-box .details {
+  text-align: center;
+}
+
+.image-gallery .image-box .details .title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  top: -5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.image-gallery .image-box .details .category {
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  bottom: -5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.image-gallery .image-box:hover .details .title {
+  top: 0px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s 0.2s ease;
+}
+
+.image-gallery .image-box:hover .details .category {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s 0.2s ease;
+}
+
+.image-gallery .image-box .details .title a,
+.image-gallery .image-box .details .category a {
+  color: white;
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+/* Let's make it responsive */
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+  }
+
+  .image-gallery .image-box:nth-child(7n + 1) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+
+/*--------------------- ABOUT ---------------------*/
+.about-container {
+  margin: 10%;
+}
+.about-text {
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Abril Fatface", cursive;
+}
+
+.about-details {
+  font-size: x-large;
+  font-family: "Darker Grotesque", sans-serif;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/*--------------------- FAQ ---------------------*/
+.faq-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Abril Fatface", cursive;
+}
+
+.faq-details {
+  text-align: justify;
+  line-height: 1.8;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.faq-details .indent {
+  text-indent: 50px;
+}
+
+.signup-text {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/*--------------------- ACCOUNT SETTINGS ---------------------*/
+.about-container {
+  margin: 10%;
+}
+.about-text {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
+
+.about-details {
+  font-size: x-large;
+  font-family: "Darker Grotesque", sans-serif;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.about-details h1{
+  font-family: "Abril Fatface", cursive;
+  color: #56382d;
+}
+
+/*--------------------- Table of shipping fees ---------------------*/
+ table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}

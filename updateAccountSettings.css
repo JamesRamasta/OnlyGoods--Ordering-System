@@ -1,0 +1,22 @@
+.content{
+	background-color: white;
+	border-radius: 100px;
+	padding: 5% 10%;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.content label{
+	padding-left: 5%;
+	text-align: right;
+}
+
+.content input{
+	float: right;
+	width: 60%;
+} 
+
+.content select{
+	float: right;
+	width: 60%;
+} 

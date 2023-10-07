@@ -1,0 +1,32 @@
+.content{
+	padding:0% 5% 0%;
+}
+
+.tSale {
+	float: left;
+	margin-bottom: 10px;
+}
+
+
+.display-date {
+	float: right;
+	margin-bottom: 10px;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	border:1px solid black;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+th,td {
+	border:1px solid black;
+	padding: 30px;
+}
+
+.card{
+	background: #ffd198;
+	margin: auto;
+}

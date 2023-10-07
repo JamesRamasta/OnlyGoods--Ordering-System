@@ -1,0 +1,41 @@
+.content{
+	background-color: #ffd198;
+	border-radius: 100px;
+	margin: 0 auto;	
+	padding: 0 10%;
+	font-size: 20px;
+}
+
+.content label{
+	text-align: left;
+	margin-left: 5%;
+}
+
+.content input{
+	float: right;
+	width: 52%;
+	margin-right: 5%;
+} 
+
+.content select{
+	float: right;
+	width: 52%;
+	margin-right: 5%;
+} 
+
+.content .lower{
+	width:30%;
+	margin-bottom: 5%;
+}
+
+.content .file{
+	width: 50%;
+	float: right;
+	margin-right: 5%;
+}
+
+.content textarea{
+	float: right;
+	resize: none;
+	margin-right: 5%;
+}

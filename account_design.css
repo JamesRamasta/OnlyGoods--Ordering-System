@@ -1,0 +1,64 @@
+.signin {
+  /*background-image: url("images/userbg.jpg");*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, 
+  make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .signin {
+    width: 100%;
+  }
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.img-responsive {
+  width: 1100px;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 3px;
+}
+
+.signup {
+  /* background-image: url("images/userbg.jpg");*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+div.center {
+  margin: 4px, 4px;
+  padding: 4px;
+  width: 500px;
+  height: 550px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}

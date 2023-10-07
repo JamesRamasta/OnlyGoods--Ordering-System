@@ -1,0 +1,169 @@
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: large;
+  background-color: #f3e8e7;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+background-image {
+  opacity: 0.5;
+}
+
+/*-- Navigation Bar --*/
+.navbar {
+  padding: 1% 0;
+  font-size: 1rem;
+  font-weight: 1000;
+  font-family: "Darker Grotesque", sans-serif;
+  letter-spacing: 0.1rem;
+  background-color: #56382d;
+}
+
+.navbar-brand {
+  font-size: 200%;
+}
+
+.cart-btn {
+	border: 1px solid;
+	background: #6B4F4F;
+	border-radius: 20px;
+	font-size: 16px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	white-space: nowrap;
+}
+
+.cart-btn-3 {
+	width: 100%;
+	border: 1px solid;
+	background: #6B4F4F;
+	border-radius: 20px;
+	font-size: 16px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	white-space: nowrap;
+	margin-top: 10px;
+}
+
+.cart-btn-3:hover {
+	background: #E19374;
+	transition: .3s;
+	color: #6B4F4F;
+	text-decoration: none;
+}
+
+.cart-btn:hover {
+	background: #E19374;
+	transition: .3s;
+	color: #6B4F4F;
+	text-decoration: none;
+}
+
+.navbar-nav li {
+  padding-right: 1rem;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #e19374;
+}
+
+.navbar-logo {
+  width: 6%;
+  margin-left: 2%;
+}
+
+.pageNumber{
+	padding-bottom: 50px;
+}
+
+.pages{
+	color: #6B4F4F;
+	font-size: 25px;
+	vertical-align: middle;
+	letter-spacing: 25px;
+}
+
+.pages:hover{
+	color: #E19374;
+	text-decoration: none;
+}
+
+.curPage{
+	color: #E19374;
+	font-size: 35px;
+}
+
+/*-- Footer --*/
+footer {
+  width: 100%;
+  background-color: #56382d;
+  font-family: "Abril Fatface", cursive;
+  padding: 3%;
+  color: white;
+}
+
+/*-- Social Media Icons --*/
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  color: #fff;
+}
+.fa:hover {
+  text-decoration: none;
+  color: #ca6f1e;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+.icon {
+  max-width: 300px;
+}
+.text{
+  text-align:center;
+  display:block;
+  color: #ffd198;
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Abril Fatface", cursive;
+  font-size: 16px;
+}
+
+.text:hover{
+  color: #ffd198;
+}
+@media (max-width: 965px) {
+    .navbar {
+        font-size: 20px;
+    }
+    .logo_enable{
+        display: none;
+        visibility: hidden;
+    }
+    .iconify{
+      pointer-events: none;
+    }
+}
+
+
